@@ -10,7 +10,7 @@ body{
     color: white;
 }
 .container-fluid2{
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 h1 {
     font-size: 3.5rem;
@@ -26,6 +26,10 @@ h2{
 h3{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem; 
+}
+
+p{
+    color: #8f8f8f;
 }
 /* .navbar */
 .navbar{
@@ -52,18 +56,20 @@ h3{
 /* title-image */
 
 .title-image{
-    width: 60%;
+    /* width: 60%; */
     transform: rotate(25deg);
+    position: absolute;
+    right: 25%;
 }
-
-
 
 
 
 /* /////////////////////features/////////////////////////// */
 #features{
     text-align: center;
-    /* margin: 140px auto 140px auto; */
+    background-color: white;    
+    position: relative;
+    z-index: 1;
     padding: 7% 15%;
 }
 .features-head{
@@ -140,16 +146,41 @@ h3{
 
 /* ////////////cta///////// */
 #cta{
-    padding: 1% ;
+    padding: 7% 15% ;
     background-color: #ff4c48;
     text-align: center;
 }
 
+.cta-text{
+    font-size: 4.5rem;
+    color: white;
+}
 .cta-button{
-    margin: 1% 0 0 0 ;
+    margin: 1.5%;
+}
+
+
+
+/* /////////////foooter////////// */
+#footer{
+    /* padding: 5px 0px 1px 0px ; */
+    padding: 5% 15%;
+    text-align: center;
+}
+.footer-icon{
+    margin: 3% 1% ;
 
 }
-#footer{
-    padding: 5px 0px 1px 0px ;
-    background-color: #ff4c48;
+
+
+
+/* //////////media///////// */
+@media (max-width:1305px){
+    .download-container-text{
+        text-align: center;
+    }
+    .title-image{
+        position: static;
+        transform: rotate(0);
+    }
 }
